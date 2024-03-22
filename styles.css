@@ -1,0 +1,258 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  background-color: #d1e5ff;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+    margin: 0;
+    border: 1px solid red;
+}
+main {
+    border: 1px solid black;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 115px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(37, 37, 255);
+    opacity: 0.9;
+    top: 0;
+    margin: 0;
+    border: 1px solid black;
+    z-index: 10;
+}
+
+
+li a {
+    color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 28px;
+}
+nav li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header a:hover {
+    background-color: rgb(124, 194, 255);
+    color: darkblue;
+    font-size: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header img {
+    height: 115px;
+    width: 10%;
+    margin: 0;
+}
+
+/* HOME */
+#home {
+    background-image: url('./images/depositphotos_192917748-stock-photo-various-herbs-and-spices.jpg');
+    height: 600px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 115px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    background-color: #d1e5ff;
+    opacity: 0.7;
+    color: rgb(32, 1, 103);
+    height: 25%;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/* ABOUT */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 7%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+
+/* RECIPES */
+#recipes {
+    border-top: 1px solid rgb(0, 0, 0);   
+    border-bottom: 1px solid rgb(0, 0, 0); 
+}
+
+.recipe-container {
+    margin-bottom: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-title {
+    width: 100%;
+    height: 100px;
+}
+
+.recipe-container .products {
+    height: 300px;
+    width: auto;
+    margin: 20px 10px;
+    background-color: rgb(239, 250, 252);
+    box-shadow: 10px 10px 7px rgb(124, 220, 252);
+}
+
+.products img {
+    height: 200px;
+    width: 200px;
+    margin: 20px 30px;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+.products p {
+    font-size: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    color: black;
+}
+
+
+.products p a:hover {
+    background-color: rgb(124, 194, 255);
+    color: rgb(35, 0, 188);
+    font-size: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* EXTRAS */
+#extras {
+    display: inline-flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.extra-title {
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  background-image: url(./images/360_F_260128861_Q2ttKHoVw2VrmvItxyCVBnEyM1852MoJ.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.box-title {
+    background-color: #d1e5ff;
+    opacity: 0.7;
+    width: 90%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.extra-title h2 {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.extra-title p {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 50%;
+    font-size: 24px;
+}
+.box {
+    border: 1px solid rgb(3, 3, 3);
+    background-color: #eff9fd;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 115px;
+    margin-right: auto;
+    width: 330px;
+    height: 400px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.box li {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.box a {
+    color: rgb(36, 0, 166);
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 24px;
+}
+
+.box a:hover {
+    background-color: rgb(124, 194, 255);
+    color: rgb(3, 3, 152);
+    font-size: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
